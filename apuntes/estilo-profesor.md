@@ -61,3 +61,16 @@ $$x_{n+1} = x_n + \big(K_1 + 2(K_2+K_3) + K_4\big)/6 \qquad y_{n+1} = y_n + \big
    - Polo de orden $m$: $R = \dfrac{1}{(m-1)!}\lim\limits_{z\to z_0}\dfrac{d^{m-1}}{dz^{m-1}}\{(z-z_0)^m F(z)\}$. Escribe $(3-1)!$ sin simplificar y las derivadas sucesivas **en columna** debajo del polinomio ($z^3+2z+1$, $3z^2+2$, $6z$).
    - Polo simple: $R = \lim\limits_{z\to z_k}(z-z_k)F(z) = \left.\dfrac{\dots}{\dots}\right|_{z=z_k}$, con barra vertical de evaluación. Al sustituir, tacha los términos que se cancelan.
 7. Suma de residuos dentro de $2\pi i(\;\cdot\;)$, cada residuo como fracción ($\frac{1+8i}{8}$), luego agrupa.
+
+## Formato de entrega en PDF (aprobado por el usuario)
+Referencia exacta: `simulacros/simulacro-01/simulacro-01.pdf` · Plantilla: `plantillas/plantilla-pdf.tex`
+- LaTeX (`pdflatex`), carta, márgenes 1.5 cm, 11 pt, **punto decimal** (`es-nodecimaldot`), `\sen`.
+- Encabezado: "Simulacro NN — Matemáticas Aplicadas" centrado + línea horizontal.
+- **Un ejercicio por página.** Título numerado en negrita con el nombre del tema como lo escribe el profesor.
+- `Resolver` / `Evalúe` / `Calcule` en negrita + ecuación + condiciones en la misma línea.
+- Procedimiento completo en el orden del profesor, sin explicaciones en prosa.
+- Fórmulas generales del método antes de sustituir (R-K), recta de nodos con TikZ (diferencias finitas), dibujo del contorno con TikZ (variable compleja).
+- 4 decimales **truncados**; en R-K los valores truncados se propagan a los pasos siguientes; en sistemas $AX=B$ se resuelve exacto y se trunca el resultado.
+- **Resultado final en recuadro** (`\boxed`), en tabla cuando hay varios valores.
+- Solo notas al pie en `\footnotesize` con $^{*}$ para supuestos o errores del enunciado.
+- Los números se generan por script desde el cálculo verificado (`calculo.py` → `generar_tex.py`), nunca a mano.

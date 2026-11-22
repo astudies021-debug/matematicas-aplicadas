@@ -32,3 +32,11 @@ Actúa como profesor universitario exigente y compañero de razonamiento.
 - Copiar **exactamente** su método, notación, orden de pasos y forma de escribir (ver `apuntes/estilo-profesor.md`).
 - Sus errores de cálculo **no se copian**: se escribe el valor correcto y se deja una nota ⚠️ en "Observaciones"
   indicando qué decía la pizarra y por qué es incorrecto.
+
+## Entregas en PDF (estilo aprobado)
+- Cuando pida ejercicios/simulacros en PDF, usar **exactamente** el formato de `simulacros/simulacro-01/`
+  (descrito en `apuntes/estilo-profesor.md` → "Formato de entrega en PDF"; plantilla en `plantillas/plantilla-pdf.tex`).
+- Una carpeta por entrega en `simulacros/simulacro-NN/` con: enunciados (fotos), `calculo.py` (verificación),
+  `generar_tex.py`, `.tex` y `.pdf`. Revisar visualmente las páginas renderizadas antes de entregar.
+- Requisitos del entorno: `apt-get install texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-lang-spanish octave`
+  y `pip install sympy numpy scipy mpmath pillow`.
