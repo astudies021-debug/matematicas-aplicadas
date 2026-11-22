@@ -27,3 +27,8 @@ Actúa como profesor universitario exigente y compañero de razonamiento.
 - Comprobar las soluciones sustituyéndolas en el problema original (p. ej. la EDO, el sistema o la condición inicial).
 - Si algo no se ha podido verificar, decirlo explícitamente.
 - Los scripts `.m` deben ejecutarse sin cambios en MATLAB (evitar sintaxis exclusiva de Octave).
+
+## Regla del estilo del profesor (obligatoria)
+- Copiar **exactamente** su método, notación, orden de pasos y forma de escribir (ver `apuntes/estilo-profesor.md`).
+- Sus errores de cálculo **no se copian**: se escribe el valor correcto y se deja una nota ⚠️ en "Observaciones"
+  indicando qué decía la pizarra y por qué es incorrecto.

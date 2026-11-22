@@ -50,3 +50,14 @@ $$x_{n+1} = x_n + \big(K_1 + 2(K_2+K_3) + K_4\big)/6 \qquad y_{n+1} = y_n + \big
 2. Por cada trayectoria: `Tray I: y=0  z=x → dz=dx`.
 3. Integral con límites en la variable que cambia, desarrollar el cuadrado, integrar, evaluar con barra $\Big|_a^b$.
 4. Sumar todas: $\oint z^2\,dz = 0$ (función analítica, teorema de Cauchy).
+
+## Método 4 — Integrales por residuos
+1. `Evalúe` $\displaystyle\int \frac{\dots}{\dots}dz = 2\pi i\sum_{i=1}^{n} R_i$ — escribe la fórmula **en la misma línea del enunciado** y luego pone el resultado a la derecha ($=2\pi i(3) = 6\pi i$).
+2. Debajo: el contorno `C: |z| = 2` y el centro `z₀ = 0`.
+3. Polos: iguala el denominador a cero, $(z-1)^3 = 0 \to z = 1$.
+4. Dibujo: plano con eje `i` y eje `x`, circunferencia con radio marcado ($R=2$) y el polo marcado con ×.
+5. Define $F(z) = \dots$
+6. Residuo:
+   - Polo de orden $m$: $R = \dfrac{1}{(m-1)!}\lim\limits_{z\to z_0}\dfrac{d^{m-1}}{dz^{m-1}}\{(z-z_0)^m F(z)\}$. Escribe $(3-1)!$ sin simplificar y las derivadas sucesivas **en columna** debajo del polinomio ($z^3+2z+1$, $3z^2+2$, $6z$).
+   - Polo simple: $R = \lim\limits_{z\to z_k}(z-z_k)F(z) = \left.\dfrac{\dots}{\dots}\right|_{z=z_k}$, con barra vertical de evaluación. Al sustituir, tacha los términos que se cancelan.
+7. Suma de residuos dentro de $2\pi i(\;\cdot\;)$, cada residuo como fracción ($\frac{1+8i}{8}$), luego agrupa.

@@ -30,3 +30,14 @@ x,y=s.symbols('x y',real=True); I=s.I
 TI=s.integrate(x**2,(x,1,2)); TII=s.expand(I*s.integrate((2+I*y)**2,(y,0,1)))
 TIII=s.expand(s.integrate((x+I)**2,(x,2,1))); TIV=s.expand(I*s.integrate((1+I*y)**2,(y,1,0)))
 print("Ej5:",TI,TII,TIII,TIV,"suma",s.simplify(TI+TII+TIII+TIV))
+# Ej5-6 residuos
+z=s.symbols('z'); z1=-1+2*I; z2=-1-2*I
+F=(2*z**2+5)/((z+1)*(z-z1)*(z-z2))
+print("den expandido:",s.expand((z+1)*(z-z1)*(z-z2)))
+R=[s.simplify(s.residue(F,z,p)) for p in (z1,z2,-1)]
+print("Residuos z1,z2,-1:",R,"suma",s.simplify(sum(R)),"integral",s.simplify(2*s.pi*I*sum(R)))
+print("|z1|=",s.Abs(z1))
+G=(z**3+2*z+1)/(z-1)**3; r=s.residue(G,z,1); print("Res z=1:",r,"integral",2*s.pi*I*r)
+th=s.symbols('th',real=True); zz=2*s.exp(I*th)
+print("contorno |z|=2 numerico:",s.N(s.Integral(G.subs(z,zz)*zz.diff(th),(th,0,2*s.pi))))
+print("F en |z|=3 numerico:",s.N(s.Integral(F.subs(z,3*s.exp(I*th))*(3*s.exp(I*th)).diff(th),(th,0,2*s.pi))))
