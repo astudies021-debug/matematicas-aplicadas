@@ -62,7 +62,7 @@ ej3=r"""
 $C: |z+1|=2$\\[6pt]
 $z_0=-1 \qquad r=2$\\[6pt]
 $z^2+2z+1=(z+1)^2 \;\to\; (z+1)^2(z+1)=(z+1)^3$\\[6pt]
-$(z+1)^3=0 \;\to\; z=-1 \quad$ (polo de orden 3)
+$(z+1)^3=0 \;\to\; z=-1 \quad k=3$
 \end{minipage}\hfill
 \begin{minipage}{0.4\textwidth}
 \begin{tikzpicture}[scale=0.75]
@@ -74,7 +74,10 @@ $(z+1)^3=0 \;\to\; z=-1 \quad$ (polo de orden 3)
 \end{minipage}\\[6pt]
 $F(z)=\dfrac{2z^2+5}{(z+1)^3}$
 \[
-R=\frac{1}{(3-1)!}\lim_{z\to-1}\frac{d^2}{dz^2}\{(z+1)^3F(z)\}
+R_2=\frac{1}{(k-1)!}\lim_{z\to z_0}\frac{d^{k-1}}{dz^{k-1}}\{(z-z_0)^kF(z)\}\qquad k=3
+\]
+\[
+R_2=\frac{1}{(3-1)!}\lim_{z\to-1}\frac{d^2}{dz^2}\{(z+1)^3F(z)\}
 =\frac12\,\frac{d^2}{dz^2}\left\{\begin{matrix}2z^2+5\\ 4z\\ 4\end{matrix}\right\}\Bigg|_{z=-1}=\frac12(4)=2
 \]
 \[

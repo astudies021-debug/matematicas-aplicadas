@@ -19,5 +19,5 @@ $$\int\limits_{C} \frac{z^3+2z+1}{(z-1)^3}\,dz = 2\pi i(3) = 6\pi i$$
 
 ## Observaciones
 - Todo correcto en la pizarra. Verificado con SymPy (residuo 3) e integrando numéricamente sobre $|z|=2$: $18.8496\,i = 6\pi i$.
-- El subíndice del residuo en la pizarra se ve como $R_2$; con un único polo sería $R_1$. Escribe el que use tu profesor.
+- $R_2$ **no es "el segundo residuo"**: es el nombre que el profesor da a la fórmula de polo de orden $k$ ($R_1$ = polo simple). Ver `referencias/pizarra/formulas-residuos-rk4-examen.jpg`.
 - El polo $z=1$ está dentro de $C$ porque $|1| < 2$. **Siempre** comprobar qué polos quedan dentro antes de sumar.
